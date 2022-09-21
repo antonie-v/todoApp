@@ -9,11 +9,11 @@
     <script src="/todo.js"></script>
 </head>
 <body>
-    <div class="container">
-        <label for="item"></label>
-        <input type="text" name="item" id="todoItem" placeholder="To-do item..." class="innerText">
-        <button id="btnSubmit">Submit</button>
-        <p class="printText"></p>
+    <div id="upperDiv" class="header">
+        <h2>To-do List</h2>
+        <input type="text" id="todoItem" placeholder="To-do item...">
+        <button id="btnSubmit" onclick="addItemFunction()">Submit</button>
+        <ul id="listItems"></ul>
     </div>
 </body>
-</html>  //comment added
+</html>  

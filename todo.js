@@ -1,6 +1,9 @@
-let submitButton = document.getElementById('btnSubmit');
-submitButton.addEventListener('click', printFunction);
 
-function printFunction() {
-    innerText.innerHTML('Printed Text...');
+//function to add todo items as list
+function addItemFunction() {
+    let li = document.createElement("li"); 
+    let input = document.getElementById("todoItem").value; 
+    let tn = document.createTextNode(input); 
+    li.appendChild(tn);
+    document.getElementById('listItems').appendChild(li);
 }
